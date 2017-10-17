@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sliding Puzzle JS</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main id="puzzleWrap">
+        <section class="container puzzleInner">
+            <header>
+                <h1>media monks sliding puzzle</h1>
+                <p>Press the 'Scramble' button to start.</p>
+            </header>
+            <section class="gameWrap">
+                <table bgcolor="white" cellspacing="0" border="1">
+                    <tr>
+                        <td id="0000" width="125px" height="125px" background="img/monks_01.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0001" width="125px" height="125px" background="img/monks_02.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0002" width="125px" height="125px" background="img/monks_03.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0003" width="125px" height="125px" background="img/monks_04.jpg" onmouseup="slidepiece()"></td>
+                    </tr>
+                    <tr>
+                        <td id="0100" width="125px" height="125px" background="img/monks_05.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0101" width="125px" height="125px" background="img/monks_06.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0102" width="125px" height="125px" background="img/monks_07.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0103" width="125px" height="125px" background="img/monks_08.jpg" onmouseup="slidepiece()"></td>
+                    </tr>
+                    <tr>
+                        <td id="0200" width="125px" height="125px" background="img/monks_09.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0201" width="125px" height="125px" background="img/monks_10.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0202" width="125px" height="125px" background="img/monks_11.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0203" width="125px" height="125px" background="img/monks_12.jpg" onmouseup="slidepiece()"></td>
+                    </tr>
+                    <tr>
+                        <td id="0300" width="125px" height="125px" background="img/monks_13.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0301" width="125px" height="125px" background="img/monks_14.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0302" width="125px" height="125px" background="img/monks_15.jpg" onmouseup="slidepiece()"></td>
+                        <td id="0303" width="125px" height="125px" background="img/monks_16.jpg" onmouseup="slidepiece()"></td>
+                    </tr>
+                </table>
+                <div class="buttonsWrap">
+                    <div class="boxCount">
+                        <label for="mc">Move count:</label>
+                        <input type="text" id="mc" value="0" readonly="readonly">
+                    </div>
+                    <div class="boxScramble">
+                        <input class="button" type="button" id="scramble" value="scramble" onclick="scramble()">
+                    </div>
+                    <div class="boxReload">
+                        <input class="button" id="reload" type="button" value="reload" onclick="reload()">
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
